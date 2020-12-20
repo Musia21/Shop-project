@@ -1,0 +1,43 @@
+:root {
+    --clack-color: #222222;
+  }
+
+.header{
+background-color: var(--clack-color);
+height: 75px;
+position: relative;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header__button{
+    background-color: transparent;
+    border: none;
+    padding: 10px 0 0 0;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu-list,
+.header__logo_wrp{
+display: flex;
+align-items: center;
+list-style-type: none;
+padding: 0 0 0 0;
+}
+.header__logo{
+    margin: 0 41px 0 0;
+}
+.header__menu-item:not(:last-child){
+    margin: 0 33px 0 0;
+}
+.header__navigation{
+    position: absolute;
+}
