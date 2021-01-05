@@ -18,15 +18,11 @@
     font-weight: 400;
     line-height: 36px;
 }
-.header {
-    background-color: var(--clack-color);
-    height: 75px;
-    position: relative;
-}
 .container {
     width: 1140px;
     margin: 0 auto;
 }
+
 .header__button {
     background-color: transparent;
     border: none;
@@ -121,6 +117,7 @@
     /* identical to box height */
     color: #000000;
 }
+
 .header__navigation-item {
       font-family: Lato;
     font-style: normal;
@@ -254,20 +251,7 @@
 .fetured__item:hover .fetured__item-img,
 .fetured__item:focus .fetured__item-img {
     filter: brightness(55%);
-}
 
-.fetured__item:hover .fetured__item-button,
-.fetured__item:focus .fetured__item-img {
-    display: block;
-}
-.fetured__item-button:hover {
-    background-color: var(--pink-color);
-}
-.fetured__item:hover{
-    background: rgba(58, 56, 56, 0.86);
-    height: 420px;
-    
-}
 .fetured__item-button {
     display: none;
     position: absolute;
@@ -310,11 +294,6 @@
     margin-left: 650px;
     border: 1 px solid rgba(241, 109, 127, 1);
     text-align: center;
-    background-color: rgba(241, 109, 127, 1);
-    width: 211px;
-    height: 47px;
-    margin-bottom: 95px;
-}
 
 .footer__menu-list {
     width: 1140px;
@@ -353,7 +332,7 @@
     line-height: 24px;
 }
 .footer__item-text {
-    font: lato;
+
     font-weight: 300;
     font-style: normal;
     font-size: 13,97px;
@@ -389,8 +368,7 @@
     height: 99px;
     width: 360px;
     font-style: italic;
-    font: lato;
-    font-weight: 400;
+
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -400,7 +378,6 @@
     margin-left: -180px;
 }
 .footer__subscribe-address {
-    margin-top: -150px;
   }
 .footer__subscribe-review {
     display: inline-block;
@@ -428,6 +405,8 @@
     width: 322px;
     height: 49px;
     margin-top: 32px;
+
+=======
 }
 .footer__item_icon:hover,
 .footer__item_icon:focus {
