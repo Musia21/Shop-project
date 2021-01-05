@@ -1,10 +1,5 @@
 :root {
     --clack-color: #222222;
-    --black-color: #222222;
-    --pink-color: #F16D7F;
-    --white-color: #FFF;
-    --pink-background: #F1E4E6;
-    --gray-bkg-color: #F8F8F8;
 }
 .visually-hidden {
     position: absolute;
@@ -23,16 +18,11 @@
     font-weight: 400;
     line-height: 36px;
 }
-
 .container {
     width: 1140px;
     margin: 0 auto;
 }
-.header {
-    background-color: var(--clack-color);
-    height: 75px;
-    position: relative;
-}
+
 .header__button {
     background-color: transparent;
     border: none;
@@ -127,7 +117,6 @@
     /* identical to box height */
     color: #000000;
 }
-
 
 .header__navigation-item {
       font-family: Lato;
@@ -262,20 +251,6 @@
 .fetured__item:hover .fetured__item-img,
 .fetured__item:focus .fetured__item-img {
     filter: brightness(55%);
-    position:absolute;
-}
-
-.fetured__item:hover .fetured__item-button,
-.fetured__item:focus .fetured__item-img {
-    display: block;
-}
-.fetured__item-button:hover {
-    background-color: var(--pink-color);
-}
-.fetured__item:hover {
-    background: rgba(58, 56, 56, 0.86);
-    height: 420px;
-}
 
 .fetured__item-button {
     display: none;
@@ -319,15 +294,7 @@
     margin-left: 650px;
     border: 1 px solid rgba(241, 109, 127, 1);
     text-align: center;
-    width: 211px;
-    height: 47px;
-    margin-bottom: 95px;
-    color:rgba(241, 109, 127, 1);
-}
 
-.fetured__item-button-products:hover {
-    background-color: var(--pink-color);
-}
 .footer__menu-list {
     width: 1140px;
     display: flex;
@@ -365,6 +332,7 @@
     line-height: 24px;
 }
 .footer__item-text {
+
     font-weight: 300;
     font-style: normal;
     font-size: 13,97px;
@@ -400,6 +368,7 @@
     height: 99px;
     width: 360px;
     font-style: italic;
+
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -409,7 +378,6 @@
     margin-left: -180px;
 }
 .footer__subscribe-address {
-    margin-top: -50px;
   }
 .footer__subscribe-review {
     display: inline-block;
@@ -437,99 +405,10 @@
     width: 322px;
     height: 49px;
     margin-top: 32px;
-    background: #E1E1E1;
-    font-size: 14px;
-    line-height: 14.8px;
-    position: absolute;
-}
-.footer__subscribe-email-photo {
-    margin-top: 32px;
-}
-.footer__subscribe-email:after {
-    content: "Subscribe";
-    text-align: center;
-}
 
+=======
+}
 .footer__item_icon:hover,
 .footer__item_icon:focus {
     opacity: .8;
 }
-.registration {
-    height: 148px;
-    background: #F8F3F4;
-    margin-top: -20px;
-}
-.registration__header {
-    color: rgba(241, 109, 127, 1);
-    padding-top: 59px;
-    padding-left: 230px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-}
-.information__personalis {
-    padding-left: 230px;
-    margin-top: 103px;
-}
-.information__personalis-details {
-   font-weight: 300px;
-   font-size: 16px;
-   line-height: 19.2px; 
-   color: rgba(34, 34, 34, 1);
-}
-.information__personalis-name {
-    display: flex;
-    width: 360px;
-    height: 45px;
-    margin-bottom: 20px;
-    padding-left: 17px;
-}
-.information__personalis-conditionibus{
-    width: 359px;
-    height: 32px;
-    font-size: 13px;
-    line-height: 15.6px;
-    color:rgba(177, 177, 177, 1);
-}
-.information__personalis-mittere {
-    height: 50px;
-    width: 167px;
-    border: 1px solid  rgba(241, 109, 127, 1);
-    margin-bottom: 96px;
-}
-.information__personalis-mittere:hover {
-    background-color: rgba(241, 109, 127, 1);
-    color: rgba(251, 251, 251, 1);
-}
-.information__loyalty-advantages,
-.information__loyalty-advantages-plus {
-    font-size: 24px;
-    line-height: 28.8px;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 300;
-    margin-bottom: -15px
-    }
-.information__personalis {
-    display: flex;
-}
-.information__loyalty {
-    padding-left: 128px;
-    
-}
-.information__loyalty-advantages-plus {
-    position: relative;
-    margin-left: 40px;
-}
-.information__loyalty-advantages-plus::before {
-    content: url(../img/mark.jpg);
-    position: absolute;
-    margin-left: -35px;
-} 
-.information__loyalty-advantages-plus:hover::before {
-    content: url(../img/mark.jpg);
-    position: absolute;
-    margin-left: -35px;
-    color: red;
-} 
