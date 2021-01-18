@@ -420,6 +420,10 @@ input.subscribe-form__input {
     border: none;
 }
 
+section.footer.container {
+    width: 100%;
+}
+
 .footer__menu-list {
     width: 1140px;
     display: flex;
@@ -452,7 +456,8 @@ input.subscribe-form__input {
     justify-content: space-between;
     text-align: center;
     margin: 0px 0 0px;
-    padding-left: 0px;
+    padding-left: 230px;
+    padding-right: 230px;
 }
 
 .footer__item-header {
@@ -485,6 +490,7 @@ input.subscribe-form__input {
 
 .footer__item_info-socialis {
     display: flex;
+    align-items: center;
 }
 
 .footer__subscribe {
@@ -1028,4 +1034,130 @@ section.registration {
 
 .information__personalis-name:active {
     background-color: #F16D7F;
+}
+
+.product__item-container {
+    margin: 0px 29px 128px 0px;
+    text-align: left;
+    background-color: #F8F8F8;
+    width: 360px;
+    min-height: 161px;
+    padding-top: 24px;
+}
+
+.nav__breadcrumb {
+    min-height: 148px;
+    background: #F8F3F4;
+    display: flex;
+    align-items: center;
+    padding-left: 140px;
+}
+
+.breadcrumb-item {
+    text-transform: uppercase;
+}
+
+ol.breadcrumb {
+    background: none;
+    padding-left: 55%;
+}
+
+#carouselExampleControls {
+    background: #F7F7F7;
+}
+
+.container__info-text {
+    border: 1px solid #EAEAEA;
+    width: 1141px;
+    height: 601px;
+    text-align: center;
+    margin-top: -30px;
+    position: relative;
+    background: none;
+    margin-bottom: 129px;
+}
+
+.text-women-collection {
+    color: #F16D7F;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 65px 0 27px 0;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.text-women-collection::before {
+    position: absolute;
+    content: url(../img/psevdo_product.jpg);
+    width: 63px;
+    height: 3px;
+    padding-top: 15px;
+    margin-left: 45px;
+}
+
+.text-women-moschino {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    text-transform: uppercase;
+    padding-bottom: 48px;
+}
+
+.text-women-main {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    width: 555px;
+    height: 51px;
+    margin: 0 auto;
+}
+
+.container__collection {
+    display: flex;
+    justify-content: center;
+}
+
+.text-price {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    padding: 32px 0 130px;
+    margin: 0 auto;
+}
+
+.text-price::before {
+    position: absolute;
+    content:url(../img/gray_vector.jpg);
+    width: 641px;
+    height: 1px;
+    padding-top: 65px;
+    margin-left: -25%;
+}
+
+#dropdownMenuButton {
+    border: none;
+    color: black;
+    background: none;
+}
+
+.btn-outline-danger {
+    margin: 49px 0 65px;
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
 }
