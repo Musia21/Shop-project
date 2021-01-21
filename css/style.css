@@ -39,6 +39,7 @@
     min-height: 75px;
     align-items: center;
     justify-content: space-between;
+    margin-left: 230px;
 }
 
 .header__button:hover,
@@ -83,9 +84,9 @@
 }
 
 .name__content {
-     margin: 335px 331px 335.9px 92px;
-     width: 377px;
-     min-height: 93px;
+    margin: 335px 331px 335.9px 92px;
+    width: 377px;
+    min-height: 93px;
 }
 
 .name__header-span {
@@ -317,7 +318,8 @@
 }
 
 .fetured__item-button:hover {
-    background-color: #F16D7F;;
+    background-color: #F16D7F;
+    border-radius: 30px;
 }
 
 .fetured__item:hover {
@@ -337,6 +339,7 @@
     padding: 11px 16px 8px 13px;
     background-color: transparent;
     border: 1px solid #FFFFFF;
+    transition: background 2s, border-radius 2s;
 }
 
 .fetured__item-header {
@@ -399,7 +402,7 @@
     position: absolute;
 }
 
-button.subscribe-form__submit {
+.subscribe-form__submit {
     margin-left: 60px;
     border: none;
     background-color: #F16D7F;
@@ -411,9 +414,14 @@ button.subscribe-form__submit {
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+    transition: background 2s;
 }
 
-input.subscribe-form__input {
+.subscribe-form__submit:hover {
+    background: #FF0000;
+}
+
+.subscribe-form__input {
     position: relative;
     padding: 10px;
     background-color: #E1E1E1;
@@ -426,6 +434,10 @@ input.subscribe-form__input {
     padding-top: 103px;
     justify-content: space-around;
     padding-left: 158px;
+}
+
+section.footer.container {
+    width: 100%;
 }
 
 .footer_h2 {
@@ -449,7 +461,7 @@ input.subscribe-form__input {
     min-height: 341px;
     color: #FBFBFB;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     margin: 0px 0 0px;
     padding-left: 0px;
@@ -543,7 +555,7 @@ input.subscribe-form__input {
     color: #222224;
 }
 
-input.subscribe-form__input {
+.subscribe-form__input {
     border: none;
     width: 65%;
     padding-left: 22px;
@@ -552,7 +564,7 @@ input.subscribe-form__input {
     border-bottom-left-radius: 15px;
 }
 
-button.subscribe-form__submit {
+.subscribe-form__submit {
     border: none;
     background-color: #F16D7F;
     border-top-right-radius: 15px;
@@ -644,13 +656,13 @@ section.registration {
 }
 
 .information__personalis-details {
-   font-weight: 300px;
-   font-size: 16px;
-   line-height: 19.2px; 
-   color: #222222;
-   text-transform: capitalize;
-   margin-top: 64px;
-   font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300px;
+    font-size: 16px;
+    line-height: 19.2px; 
+    color: #222222;
+    text-transform: capitalize;
+    margin-top: 64px;
+    font-family: 'Lato', 'Arial', sans-serif;
 }
 
 .information__personalis-name {
@@ -748,6 +760,7 @@ section.registration {
 
     .header__container {
         width: 93.3%;
+        margin-left: 32px;
     }
 
     .name__img{
@@ -795,7 +808,7 @@ section.registration {
 
     .fetured__item:nth-child(1),
     .fetured__item:nth-child(4) {
-         margin-left: 0px;
+        margin-left: 0px;
 
     }
 
@@ -878,7 +891,7 @@ section.registration {
         margin: 0 auto;
     }
 
-    h3.footer__item_info-copy {
+    .footer__item_info-copy {
         padding-left: 32px;
         padding-top: 30px;
         margin: 0px;
@@ -898,14 +911,23 @@ section.registration {
     .name__img {
         display: inline-flex;
     }
+    section.cart {
+        display: block;
+    }
+    .cart__products-main {
+        margin: 0 auto;
+    }
+    .cart__products-main:nth-child(1) {
+        margin: 0 auto;
+    }
 }
 
 
 @media (max-width: 767px) {
     .container {
-       width: 91%;
+    width: 91%;
     }
-  
+
     .header__container {
         width: 91%;
     }
@@ -1020,6 +1042,42 @@ section.registration {
     .fetured__item:nth-child(6) {
         margin: 0 auto;
     }
+    section.registration {
+        display: block;
+    }
+    .registration__header {
+        text-align: center;
+        padding-left: 0px;
+    }
+    .information__loyalty-advantages, 
+    .information__loyalty-advantages-text, 
+    .information__loyalty-advantages-plus, 
+    .information__loyalty-advantages-mein {
+        font-size: 16px;
+    }
+    .information__info {
+        margin-left: 0px;
+    }
+    .information__loyalty {
+        padding-left: 0px;
+    }
+    .information__personalis-mittere {
+        margin-bottom: 0px;
+    }
+    .information__loyalty-advantages-mein {
+        padding-top: 40px;
+    }
+    .information__loyalty-advantages-plus:nth-child(5) {
+        padding-bottom: 100px;
+    }
+    .footer__item_info {
+        display: block;
+        text-align: center;
+    }
+    .footer__item_info-socialis {
+        padding: 0px 114px 24px 114px;
+        justify-content: space-between;
+    }
 }
 
 .information__personalis-name:focus {
@@ -1028,4 +1086,195 @@ section.registration {
 
 .information__personalis-name:active {
     background-color: #F16D7F;
+}
+
+.cart__product {
+    margin-bottom: 40px;
+}
+
+.cart__products-main {
+    margin-left: 230px;
+    display: flex;
+    border: 1px solid #F5F3F3;
+    width: 652px;
+    height: 306px;
+}
+
+.cart__products-main:hover {
+    outline: 10px solid #F5F3F3;
+}
+
+.cart__products-main:nth-child(1) {
+    margin: 96px 0 40px 230px;
+}
+
+.cart__product_name {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    padding: 22px 97px 42px 31px;
+    width: 262px;
+    height: 58px;
+    margin: 0 auto;
+}
+
+.cart__product_info {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+    padding: 0 0 6px 31px;
+    margin: 0 auto;
+}
+
+.cart__products-main_button {
+    margin: 32px 0 129px 230px;
+    justify-content: space-between;
+    display: flex;
+    width: 652px;
+}
+
+.cart__products-button {
+    width: 235px;
+    height: 50px;
+    background: none;
+    border: 1px solid #A4A4A4;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+    transition: background 2s, border-radius 2s;;
+}
+
+.cart__products-button:hover {
+    background-color:  #F16D7F;
+    border-radius: 30px
+}
+
+section.cart {
+    display: flex;
+}
+
+.cart__purchase-terms {
+    margin: 113px 0 20px 129px;
+}
+
+.cart__personalis-details {
+    margin: 0 auto;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.cart__personalis-info {
+    background: #FFFFFF;
+    margin: 20px 0 0 0;
+    width: 360px;
+    height: 45px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-left: 17px;
+    margin-right: 230px;
+}
+
+.cart__personalis-info:focus {
+    background-color:  #F16D7F;
+    color:#000000;
+}
+
+.cart__personalis-quote {
+    background: #FFFFFF;
+    width: 100px;
+    height: 34px;
+    margin-top: 23px;
+    font-family:'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    padding-left: 14px;
+    margin-right: 490px;
+    transition: background 2s;
+}
+
+.cart__personalis-quote:hover {
+    background-color:  #F16D7F;
+}
+
+.proceed__checkout {
+    border: 1px solid #F5F3F3;
+    width: 360px;
+    height: 214px;
+    margin-top: 58px;
+    background-color: #F5F3F3;
+}
+
+.proceed__total {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #4A4A4A;
+    text-align: right;
+    padding: 34px 34px 0 0;
+    margin: 0 auto;
+}
+
+.proceed__total-grand {
+    text-transform: uppercase;
+    font-family:'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 auto;
+    padding: 12px 37px 0;
+    color: #222222;
+    text-align: right;
+}
+
+.proceed__total-grand::before {
+    content: url(../img/cart_psev.jpg);
+    height: 1px;
+    width: 275px;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 20px;
+}
+
+.proceed__button {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    width: 273px;
+    height: 50px;
+    margin: 39px 43px 42px 44px;
+    transition: background 2s;
+}
+.proceed__button:hover {
+    color: #FFFFFF;
+    background-color:  #F16D7F;
 }
