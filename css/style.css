@@ -178,6 +178,7 @@
     width: 360px;
     min-height: 260px;
     position: relative;
+    background-color: #211616;
 }
 
 .stock__item-men {
@@ -185,6 +186,7 @@
     width: 360px;
     min-height: 260px;
     position: relative;
+    background-color: #211616;
 }
 
 .stock__item-kids {
@@ -192,10 +194,11 @@
     width: 360px;
     min-height: 260px;
     position: relative;
+    background-color: #211616;
 }
 
 .stock__item-last {
-    background-image: url(../img/accesories.png);
+    background-image: url(../img/accesories.jpg);
     background-color: #211616;
     width: 100%;
     min-height: 180px;
